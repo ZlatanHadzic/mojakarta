@@ -364,7 +364,7 @@ function AISection() {
 
 // ─── FOOTER ───────────────────────────────────────────────────────────────────
 function Footer() {
-  const [email, setEmail] = useState("");
+
 
   return (
     <footer id="kontakt" style={{ background: "#060F1C", borderTop: "1px solid rgba(255,255,255,0.05)", padding: "80px 5% 32px" }}>
