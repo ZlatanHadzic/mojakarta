@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from "react";
 import { motion, useInView, useScroll, useTransform, AnimatePresence } from "framer-motion";
 import {
   Ticket, Mic, Globe, Eye, Bus, Heart, Crown, QrCode,
-  ArrowRight, ChevronDown, Play, Star, MapPin, Calendar,
+  ArrowRight, ChevronDown, Star, MapPin, Calendar,
   Zap, Shield, Users, Menu, X, Mail, Phone, Instagram,
   Facebook, Twitter, Sparkles, Volume2, Accessibility
 } from "lucide-react";
@@ -737,11 +737,11 @@ function Footer() {
             <div key={col.title}>
               <h4 style={{ fontSize: 13, fontWeight: 700, color: COLORS.white, marginBottom: 16, letterSpacing: "0.06em", textTransform: "uppercase", fontFamily: "'DM Sans', system-ui" }}>{col.title}</h4>
               {col.links.map(l => (
-                <a key={l} href="#" style={{ display: "block", fontSize: 14, color: COLORS.slate, textDecoration: "none", marginBottom: 10, fontFamily: "'DM Sans', system-ui", transition: "color 0.2s" }}
+                <button key={l} onClick={() => {}} style={{ display: "block", fontSize: 14, color: COLORS.slate, background: "none", border: "none", padding: 0, marginBottom: 10, fontFamily: "'DM Sans', system-ui", transition: "color 0.2s", cursor: "pointer", textAlign: "left" }}
                   onMouseEnter={e => e.target.style.color = COLORS.white}
                   onMouseLeave={e => e.target.style.color = COLORS.slate}>
                   {l}
-                </a>
+                </button>
               ))}
             </div>
           ))}
