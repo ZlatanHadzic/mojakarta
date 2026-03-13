@@ -748,19 +748,7 @@ function Footer() {
         </div>
 
         {/* Newsletter */}
-        <div style={{ background: COLORS.cardBg, borderRadius: 20, padding: "32px 36px", border: "1px solid rgba(255,255,255,0.06)", display: "flex", alignItems: "center", justifyContent: "space-between", gap: 32, marginBottom: 48, flexWrap: "wrap" }}>
-          <div>
-            <h3 style={{ fontFamily: "'Playfair Display', serif", fontSize: 22, fontWeight: 700, color: COLORS.white, margin: "0 0 6px" }}>Ostanite obavješteni</h3>
-            <p style={{ fontSize: 14, color: COLORS.slate, margin: 0, fontFamily: "'DM Sans', system-ui" }}>Novi događaji, popusti i ekskluzivne ponude direktno na vašu adresu.</p>
-          </div>
-          <div style={{ display: "flex", gap: 10, flex: "0 0 auto" }}>
-            <input value={email} onChange={e => setEmail(e.target.value)} placeholder="vasa@email.ba"
-              style={{ background: "rgba(255,255,255,0.05)", border: "1px solid rgba(255,255,255,0.1)", borderRadius: 10, padding: "12px 18px", color: COLORS.white, fontSize: 14, fontFamily: "'DM Sans', system-ui", outline: "none", width: 240 }} />
-            <button style={{ background: `linear-gradient(135deg, ${COLORS.orange}, ${COLORS.orangeLight})`, color: "white", border: "none", borderRadius: 10, padding: "12px 20px", fontWeight: 700, fontSize: 14, cursor: "pointer", display: "flex", alignItems: "center", gap: 6 }}>
-              <Mail size={15} /> Pretplati se
-            </button>
-          </div>
-        </div>
+      
 
         {/* Bottom bar */}
         <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", paddingTop: 24, borderTop: "1px solid rgba(255,255,255,0.05)", flexWrap: "wrap", gap: 12 }}>
